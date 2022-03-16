@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 
 options = Options()
-# options.headless = True
+options.headless = True
 with webdriver.Firefox(options=options) as driver:
     # Initial load and "Välkommen..."
     driver.get("https://bokapass.nemoq.se/Booking/Booking/Index/stockholm")
