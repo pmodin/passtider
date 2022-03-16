@@ -12,6 +12,7 @@ options = Options()
 with webdriver.Firefox(options=options) as driver:
     # Initial load and "Välkommen..."
     driver.get("https://bokapass.nemoq.se/Booking/Booking/Index/stockholm")
+    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.NAME, "StartNextButton")))
     driver.find_element(By.NAME, "StartNextButton").click()
 
     # Accept GDPR
