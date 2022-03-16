@@ -2,6 +2,9 @@
 
 Displays available times in your terminal.
 
+Currently only Sthlm City, you need to change the code accordinly for other
+places.
+
 Example usage (pipenv)
 
 ```
